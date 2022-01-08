@@ -1,5 +1,6 @@
 import 'package:aiapp/camera-filter.dart';
 import 'package:aiapp/camera.dart';
+import 'package:aiapp/camerakit.dart';
 import 'package:aiapp/camerapage.dart';
 import 'package:aiapp/filter.dart';
 import 'package:aiapp/posedetection.dart';
@@ -38,7 +39,7 @@ class _HomeState extends State<Home> {
           )
         ],
       ),
-      body: filcam(),
+      body: Camkit(),
     );
   }
 }

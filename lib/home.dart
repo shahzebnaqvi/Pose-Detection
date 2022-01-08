@@ -39,7 +39,7 @@ class _HomeState extends State<Home> {
           )
         ],
       ),
-      body: Camkit(),
+      body: filcam(),
     );
   }
 }

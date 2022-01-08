@@ -1,4 +1,6 @@
+import 'package:aiapp/camera-filter.dart';
 import 'package:aiapp/camera.dart';
+import 'package:aiapp/camerapage.dart';
 import 'package:aiapp/filter.dart';
 import 'package:aiapp/posedetection.dart';
 import 'package:flutter/material.dart';
@@ -36,7 +38,7 @@ class _HomeState extends State<Home> {
           )
         ],
       ),
-      body: CameraApp(),
+      body: filcam(),
     );
   }
 }

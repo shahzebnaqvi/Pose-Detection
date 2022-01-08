@@ -42,6 +42,7 @@ dependencies:
   learning_pose_detection: ^0.0.2
   learning_input_image: ^0.0.6+2
   provider: ^6.0.2
+  camerakit: ^0.0.75
 
 dev_dependencies:
   flutter_test:

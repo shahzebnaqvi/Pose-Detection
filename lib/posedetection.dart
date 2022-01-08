@@ -3,10 +3,28 @@ import 'package:learning_pose_detection/learning_pose_detection.dart';
 import 'package:learning_input_image/learning_input_image.dart';
 import 'package:provider/provider.dart';
 
-// ChangeNotifierProvider(
-//         create: (_) => PoseDetectionState(),
-//         child: PoseDetectionPage(),
-//       ),
+void main() {
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        primarySwatch: Colors.lightBlue,
+        visualDensity: VisualDensity.adaptivePlatformDensity,
+        primaryTextTheme: TextTheme(headline6: TextStyle(color: Colors.white)),
+      ),
+      home: ChangeNotifierProvider(
+        create: (_) => PoseDetectionState(),
+        child: PoseDetectionPage(),
+      ),
+    );
+  }
+}
+
 class PoseDetectionPage extends StatefulWidget {
   @override
   _PoseDetectionPageState createState() => _PoseDetectionPageState();

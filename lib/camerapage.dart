@@ -92,11 +92,11 @@ class _CameraPageState extends State<CameraPage> {
             child: const Text('Capture Image'),
           ),
         ),
-        if (pictureFile != null)
-          Image.network(
-            pictureFile!.path,
-            height: 200,
-          )
+        // if (pictureFile != null)
+        //   Image.network(
+        //     pictureFile!.path,
+        //     height: 200,
+        //   )
         //Android/iOS
         // Image.file(File(pictureFile!.path)))
       ],
